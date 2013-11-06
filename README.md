@@ -38,29 +38,45 @@ Group PP
 * `TITLE-ABS-KEY(ingest* AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
 * `TITLE-ABS-KEY(ingest* AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
 * `TITLE-ABS-KEY(ingest* AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `(TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(ingest* AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(ingest* AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(ingest* AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")))`
 
 ### Storage process:
 
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `TITLE-ABS-KEY(storage AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(storage AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(storage AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(storage AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
+* `(TITLE-ABS-KEY(storage AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(storage AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(storage AND problem* AND (resource* OR type*))AND ("digital librar*" OR "institucional repositor*"))`
+
 
 ### Cataloging process:
 
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `TITLE-ABS-KEY(cataloging AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(cataloging AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(cataloging AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(cataloging AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
+* `(TITLE-ABS-KEY(cataloging AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(cataloging AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(cataloging AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(cataloging AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")))`
 
 ### Indexing process:
 
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `TITLE-ABS-KEY(indexing AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(indexing AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(indexing AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(indexing AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
+* `(TITLE-ABS-KEY(indexing AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(indexing AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(indexing AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY(indexing AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*")))`
 
 ### Search Engine process:
 
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `TITLE-ABS-KEY("search engine" AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY("search engine" AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY("search engine" AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY("search engine" AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
+* `(TITLE-ABS-KEY("search engine" AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY("search engine" AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY("search engine" AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))) AND (TITLE-ABS-KEY("search engine" AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*")))`
 
 ### Browsing process:
 
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `TITLE-ABS-KEY(browsing AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(browsing AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(browsing AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(browsing AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
+* `(TITLE-ABS-KEY(browsing AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`) AND (TITLE-ABS-KEY(browsing AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`) AND (TITLE-ABS-KEY(browsing AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`) AND (TITLE-ABS-KEY(browsing AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*")))`
