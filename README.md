@@ -28,6 +28,7 @@ Group PE
 	`TITLE-ABS-KEY(journal AND problem* AND ("digital librar*" OR "institucional repositor*")) AND ( LIMIT-TO(DOCTYPE,"ar" ) OR LIMIT-TO(DOCTYPE,"re" ) ) AND ( LIMIT-TO(SUBJAREA,"SOCI" ) OR LIMIT-TO(SUBJAREA,"COMP" ) ) AND ( LIMIT-TO(EXACTKEYWORD,"Digital libraries" ) OR LIMIT-TO(EXACTKEYWORD,"Digital libraries" ) OR LIMIT-TO(EXACTKEYWORD,"Digital library" ) )`
 * UNION:
 	`TITLE-ABS-KEY((resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND problem* AND ("digital librar*" OR "institucional repositor*")) AND ( LIMIT-TO(DOCTYPE,"ar" ) OR LIMIT-TO(DOCTYPE,"re" ) ) AND ( LIMIT-TO(SUBJAREA,"COMP" ) OR LIMIT-TO(SUBJAREA,"SOCI" ) ) AND ( LIMIT-TO(EXACTKEYWORD,"Digital libraries" ) OR LIMIT-TO(EXACTKEYWORD,"Digital library" ) )`
+
 Group PP
 --------
 
