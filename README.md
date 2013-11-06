@@ -1,7 +1,8 @@
-ReviewRR
+Review of the *Resource Representation* in **Institutional Repository**
 ========
 
-Review of the *Resource Representation* in **Institutional Repository**
+There are two groups of queries that have been made in Scopus, on November 5, 2014. The first group called problems of elements (PE), and the second group called Problems of Process (PP)
+
 
 Group PE
 --------
