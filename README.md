@@ -1,7 +1,7 @@
 ReviewRR
 ========
 
-Review of the *resource representation* in **institutional repository**
+Review of the *Resource Representation* in **Institutional Repository**
 
 Group PE
 --------
