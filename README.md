@@ -35,7 +35,10 @@ Group PP
 ### Ingest process:
 
 * `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type*) AND ("digital librar*" OR "institucional repositor*"))`
-* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR catalog* OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
+* `TITLE-ABS-KEY(ingest* AND problem* AND metadata AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(ingest* AND problem* AND storage AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(ingest* AND problem* AND ("controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*"))`
+* `TITLE-ABS-KEY(ingest* AND problem* AND (resource* OR type* OR metadata OR storage OR "controlled vocabular*" OR thesaurus OR "abstract entities" OR author OR institution OR journal) AND ("digital librar*" OR "institucional repositor*")) `
 
 ### Storage process:
 
